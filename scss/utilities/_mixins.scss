@@ -15,10 +15,13 @@
 }
 
 //flex default
-@mixin flex($flex: flex, $fldir: null, $alitms: null) {
+@mixin flex($flex: null, $fldir: null, $alitms: null, $jtfycnt: null, $flxb: null, $wd: null) {
   display: $flex;
   flex-direction: $fldir;
   align-items: $alitms;
+  justify-content: $jtfycnt;
+  flex-basis: $flxb;
+  width: $wd;
 }
 
 //aligns
