@@ -51,3 +51,23 @@ $themes: (
   '8': $warning-color-lighter,
   '12': $primary-color,
 );
+
+
+//variables to fill map units
+$flexbasis: 12.5em;
+$image-box: 12.5em;
+$gutter-right: 2em;
+$padding-body: 2em;
+
+//map with units for calculactions of widths and media queries
+$units: (
+  'flxbas': $flexbasis,
+  'widthimgbox': $image-box,
+  'gttrrght': $gutter-right,
+  'pddbody': $padding-body,
+);
+
+//functions
+@function calculateColumn ($vw, $flexbasis, $gutter-right, $padding-body) {
+  @return ((($vw / $flex-basis) - $padding-body))
+}
