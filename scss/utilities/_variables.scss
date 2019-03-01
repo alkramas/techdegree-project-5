@@ -36,7 +36,10 @@ $button-bordradius: 5px;
 $default-lineheight: 1.6;
 
 //breakpoints
-$break-medium: 768px;
+$break-small: 264px;
+$break-medium: 496px;
+$break-large: 728px;
+$break-xlarge: 960px;
 
 //align-items
 $center: 0 auto;

@@ -3,6 +3,108 @@
 // styles related to base elements
 // **********************************************
 
+@import url("https://fonts.googleapis.com/css?family=Aleo:300,300i,400,400i,700,700i");
+
 * {
   box-sizing: border-box;
+}
+
+/*preliminary plain css*/
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /*spacing*/
+  margin: 2em;
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 100%;
+}
+
+
+
+
+img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  /* clip-rule: ; */
+  /*clip: rect(0px, 200px, 200px, 0px);*/
+  left: -60px;
+}
+
+.search-box {
+  margin: 1em 0;
+  width: 40%;
+  min-width: 200px;
+}
+
+input {
+  width: 100%;
+}
+
+.image-item {
+  align-self: center;
+  flex-basis: 200px;
+  height: 200px;
+  /* width: 200px; */
+  position: relative;
+  overflow: hidden;
+}
+.image-item {
+  /*gutter*/
+  margin-right: 0em;
+  margin-bottom: 2em;
+}
+
+/***********************
+Media Queries
+***********************/
+@media (max-width: 495px) {
+  .image-item:nth-child(odd) {
+    margin-right: 0em;
+    margin-bottom: 2em;
+  }
+  .image-item:nth-child(even) {
+    margin-right: 0em;
+    margin-bottom: 2em;
+  }
+}
+@media (min-width: 496px) {
+  .image-item:nth-child(odd) {
+    margin-right: 2em;
+    margin-bottom: 2em;
+  }
+  .image-item:nth-child(even) {
+    margin-right: 0em;
+    margin-bottom: 2em;
+  }
+}
+@media (min-width: 695px) {
+  .image-item:nth-child(1n+0) {
+    margin-right: 2em;
+    margin-bottom: 2em;
+  }
+  .image-item:nth-child(3n) {
+    margin-right: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+@media (min-width: 728px) {
+  .image-item:nth-child(1n+0) {
+    margin-right: 2em;
+    margin-bottom: 2em;
+  }
+  .image-item:nth-child(3n) {
+    margin-right: 0;
+    margin-bottom: 2em;
+  }
 }
