@@ -67,7 +67,7 @@ input {
 /***********************
 Media Queries
 ***********************/
-@media (max-width: 495px) {
+/*@media (max-width: 495px) {
   .image-item:nth-child(odd) {
     margin-right: 0em;
     margin-bottom: 2em;
@@ -76,24 +76,14 @@ Media Queries
     margin-right: 0em;
     margin-bottom: 2em;
   }
-}
+}*/
 @media (min-width: 496px) {
-  .image-item:nth-child(odd) {
-    margin-right: 2em;
-    margin-bottom: 2em;
-  }
-  .image-item:nth-child(even) {
-    margin-right: 0em;
-    margin-bottom: 2em;
-  }
-}
-@media (min-width: 695px) {
   .image-item:nth-child(1n+0) {
     margin-right: 2em;
     margin-bottom: 2em;
   }
-  .image-item:nth-child(3n) {
-    margin-right: 2em;
+  .image-item:nth-child(2n+0) {
+    margin-right: 0em;
     margin-bottom: 2em;
   }
 }
@@ -103,7 +93,19 @@ Media Queries
     margin-right: 2em;
     margin-bottom: 2em;
   }
-  .image-item:nth-child(3n) {
+  .image-item:nth-child(3) {
+    margin-right: 0em;
+    margin-bottom: 2em;
+  }
+}
+@media (min-width: 960px) {
+  .image-item:nth-child(1),
+  .image-item:nth-child(2),
+  .image-item:nth-child(3) {
+    margin-right: 2em;
+    margin-bottom: 2em;
+  }
+  .image-item:nth-child(4n+0) {
     margin-right: 0;
     margin-bottom: 2em;
   }

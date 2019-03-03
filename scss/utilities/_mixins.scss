@@ -54,8 +54,8 @@
 }
 
 //media queries, flexbox settings
-@mixin md-medium($dir: null, $jtfycnt: null, $flxb: null, $alitms: null, $mgt: null, $mgl: null, $wd: null) {
-  @media (min-width: $break-medium) {
+@mixin mquery ($dir: null, $jtfycnt: null, $flxb: null, $alitms: null, $mgt: null, $mgl: null, $wd: null) {
+  @media (min-width: $break) {
     flex-direction: $dir;
     justify-content: $jtfycnt;
     flex-basis: $flxb;

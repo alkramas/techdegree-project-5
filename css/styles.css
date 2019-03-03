@@ -1,3 +1,8 @@
+// **********************************************
+// base.scss
+// styles related to base elements
+// **********************************************
+
 @import url("https://fonts.googleapis.com/css?family=Aleo:300,300i,400,400i,700,700i");
 
 * {
@@ -11,7 +16,9 @@
   flex-wrap: wrap;
   flex-direction: column;
   /*spacing*/
-  margin: 2em;
+  margin: 2em auto;
+  padding: 0 2em;
+  max-width: 1100px;
 }
 
 .grid__row {
@@ -62,7 +69,7 @@ input {
 /***********************
 Media Queries
 ***********************/
-@media (max-width: 495px) {
+/*@media (max-width: 495px) {
   .image-item:nth-child(odd) {
     margin-right: 0em;
     margin-bottom: 2em;
@@ -71,24 +78,14 @@ Media Queries
     margin-right: 0em;
     margin-bottom: 2em;
   }
-}
+}*/
 @media (min-width: 496px) {
-  .image-item:nth-child(odd) {
-    margin-right: 2em;
-    margin-bottom: 2em;
-  }
-  .image-item:nth-child(even) {
-    margin-right: 0em;
-    margin-bottom: 2em;
-  }
-}
-@media (min-width: 695px) {
   .image-item:nth-child(1n+0) {
     margin-right: 2em;
     margin-bottom: 2em;
   }
-  .image-item:nth-child(3n) {
-    margin-right: 2em;
+  .image-item:nth-child(2n+0) {
+    margin-right: 0em;
     margin-bottom: 2em;
   }
 }
@@ -98,7 +95,19 @@ Media Queries
     margin-right: 2em;
     margin-bottom: 2em;
   }
-  .image-item:nth-child(3n) {
+  .image-item:nth-child(3n+0) {
+    margin-right: 0em;
+    margin-bottom: 2em;
+  }
+}
+@media (min-width: 960px) {
+  .image-item:nth-child(1n+0),
+  .image-item:nth-child(2n+0),
+  .image-item:nth-child(3n+0) {
+    margin-right: 2em;
+    margin-bottom: 2em;
+  }
+  .image-item:nth-child(4n+0) {
     margin-right: 0;
     margin-bottom: 2em;
   }
