@@ -8,6 +8,7 @@ const imgAll = document.querySelectorAll('img');
 
 searchInput.addEventListener ('input', function() {
   let searchInputValue = searchInput.value.toLowerCase();
+
   for (let i = 0; i < imgAll.length; i += 1) {
     let imgDiv = imgDivs[i];
     let imgAlt = imgAll[i].alt.toLowerCase();
@@ -19,6 +20,6 @@ searchInput.addEventListener ('input', function() {
     else {
       imgDiv.style.display = 'none';
     }
-    console.log(imgAlt);
+    // console.log(imgAlt);
   }
 });
