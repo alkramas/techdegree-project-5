@@ -11,10 +11,10 @@
 
 /*preliminary plain css*/
 .container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
+  // display: flex;
+  // justify-content: center;
+  // flex-wrap: wrap;
+  // flex-direction: column;
   /*spacing*/
   margin: 2em;
 }
@@ -60,53 +60,5 @@ input {
 }
 .image-item {
   /*gutter*/
-  margin-right: 0em;
-  margin-bottom: 2em;
-}
-
-/***********************
-Media Queries
-***********************/
-/*@media (max-width: 495px) {
-  .image-item:nth-child(odd) {
-    margin-right: 0em;
-    margin-bottom: 2em;
-  }
-  .image-item:nth-child(even) {
-    margin-right: 0em;
-    margin-bottom: 2em;
-  }
-}*/
-@media (min-width: 496px) {
-  .image-item:nth-child(1n+0) {
-    margin-right: 2em;
-    margin-bottom: 2em;
-  }
-  .image-item:nth-child(2n+0) {
-    margin-right: 0em;
-    margin-bottom: 2em;
-  }
-}
-
-@media (min-width: 728px) {
-  .image-item:nth-child(1n+0) {
-    margin-right: 2em;
-    margin-bottom: 2em;
-  }
-  .image-item:nth-child(3) {
-    margin-right: 0em;
-    margin-bottom: 2em;
-  }
-}
-@media (min-width: 960px) {
-  .image-item:nth-child(1),
-  .image-item:nth-child(2),
-  .image-item:nth-child(3) {
-    margin-right: 2em;
-    margin-bottom: 2em;
-  }
-  .image-item:nth-child(4n+0) {
-    margin-right: 0;
-    margin-bottom: 2em;
-  }
+  margin: 1em;
 }
