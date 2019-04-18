@@ -15,13 +15,14 @@
 }
 
 //flex default
-@mixin flex($flex: null, $fldir: null, $alitms: null, $jtfycnt: null, $flxb: null, $wd: null) {
+@mixin flex($flex: null, $fldir: null, $alitms: null, $jtfycnt: null, $flxb: null, $wd: null, $ht: null) {
   display: $flex;
   flex-direction: $fldir;
   align-items: $alitms;
   justify-content: $jtfycnt;
   flex-basis: $flxb;
   width: $wd;
+  height: $ht;
 }
 
 //aligns
@@ -54,7 +55,7 @@
 }
 
 //media queries, flexbox settings
-@mixin mquery ($dir: null, $jtfycnt: null, $flxb: null, $alitms: null, $mgt: null, $mgl: null, $wd: null) {
+@mixin mquery ($break: null, $dir: null, $jtfycnt: null, $flxb: null, $alitms: null, $mgt: null, $mgl: null, $wd: null, $ht: null) {
   @media (min-width: $break) {
     flex-direction: $dir;
     justify-content: $jtfycnt;
@@ -63,6 +64,7 @@
     margin-top: $mgt;
     margin-left: $mgl;
     width: $wd;
+    height: $ht;
   }
 }
 
